@@ -1,0 +1,26 @@
+{
+  "name": "ct_landing_page",
+  "version": "1.0.0",
+  "description": "nothig\\",
+  "keywords": [
+    "taiwo"
+  ],
+  "homepage": "https://github.com/TaiwoForbes/CT_Landing_Page#readme",
+  "bugs": {
+    "url": "https://github.com/TaiwoForbes/CT_Landing_Page/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TaiwoForbes/CT_Landing_Page.git"
+  },
+  "license": "ISC",
+  "author": "taiwo",
+  "type": "commonjs",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "tailwindcss": "^4.0.15"
+  }
+}
