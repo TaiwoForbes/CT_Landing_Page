@@ -344,3 +344,128 @@ span.highlight {
   margin-bottom: 1rem;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.offer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  min-height: 100vh;
+  margin-bottom: 1.5rem;
+}
+
+.offer-content {
+  
+  border-radius: 15px;
+  padding: 1rem;
+ 
+  width: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.warning, .hot, .alert, .note, .final-chance, .price-info {
+  margin: 1rem 0;
+  line-height: 1.5;
+}
+
+.warning {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ff4c4c;
+}
+
+.hot {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ff9f00;
+}
+
+.alert {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ffeb3b;
+}
+
+.note {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #464444;
+}
+
+.final-chance {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #ffeb3b;
+}
+
+.price {
+  color: #00e676;
+  font-weight: 700;
+}
+
+.offer-content p {
+  margin-bottom: 1rem;
+}
+
+.offer-content h2 {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  color: #00e5ff;
+}
+
+.offer-content ul {
+  list-style: disc;
+  margin-left: 1.5rem;
+  text-align: left;
+}
+
+.cta-button {
+  display: inline-block;
+  background: linear-gradient(45deg, #ff8a00, #e52e71);
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem 1rem;
+  border-radius: 50px;
+  font-weight: 500;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 1rem 0;
+  font-size: 16px;
+}
+
+.cta-button:hover {
+  background-color: #c20855;
+  
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #444;
+  margin: 2rem 0;
+}
+
+.conclusion {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-top: 1.5rem;
+  color: #242222;
+}
+
+
