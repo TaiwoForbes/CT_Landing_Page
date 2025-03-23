@@ -42,7 +42,6 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
 }
 
 .section_cont {
@@ -193,7 +192,6 @@ header p {
 .testimonial-container {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  
 }
 
 .testimonial {
@@ -203,8 +201,6 @@ header p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
- 
-  
 }
 
 .testimonial a {
@@ -213,14 +209,13 @@ header p {
   padding: 0.5rem;
   border-radius: 20px;
   background-color: white;
-  
+
   color: black;
 }
-.testimonial p{
+.testimonial p {
   font-size: 16px;
- 
 }
-.testimonials h2{
+.testimonials h2 {
   text-transform: uppercase;
   color: rgb(17, 72, 226);
   font-weight: 700;
@@ -233,7 +228,6 @@ header p {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
   margin-bottom: 1.5rem;
-  
 }
 .testimonial a:hover {
   background: rgb(233, 229, 229);
@@ -249,7 +243,6 @@ button {
   top: 50%;
   transform: translateY(-50%);
   font-size: 1rem;
- 
 }
 
 .prev {
@@ -325,8 +318,6 @@ span.highlight {
   }
 }
 
-
-
 .testimonials .story h3 {
   font-size: 15px;
   font-weight: bold;
@@ -337,51 +328,36 @@ span.highlight {
   margin-bottom: 15px;
 }
 
-.testimonials .story p{
+.testimonials .story p {
   font-size: 15px;
   line-height: 1.6;
   font-weight: 300;
   margin-bottom: 1rem;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .offer-container {
   display: flex;
   justify-content: center;
   align-items: center;
- 
+
   min-height: 100vh;
   margin-bottom: 1.5rem;
 }
 
 .offer-content {
-  
   border-radius: 15px;
   padding: 1rem;
- 
+
   width: 100%;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
 }
 
-.warning, .hot, .alert, .note, .final-chance, .price-info {
+.warning,
+.hot,
+.alert,
+.note,
+.final-chance,
+.price-info {
   margin: 1rem 0;
   line-height: 1.5;
 }
@@ -452,7 +428,6 @@ span.highlight {
 
 .cta-button:hover {
   background-color: #c20855;
-  
 }
 
 .offer-container hr {
