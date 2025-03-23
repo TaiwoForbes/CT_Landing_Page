@@ -223,6 +223,8 @@ header p {
   font-size: 15px;
   line-height: 16px;
   margin-bottom:0.5rem ;
+ 
+  margin-right: 1rem;
 }
 
 .testimonials h2 {
