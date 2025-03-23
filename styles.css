@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +12,8 @@ body {
   font-family: "Poppins", sans-serif;
   text-align: center;
   background-image: url("asset/pexels-photo-2680270.webp");
+  /* animation: fadeIn 1.5s ease-in-out;
+  transition: transform 0.3s ease-in-out; */
 }
 
 .container {
@@ -31,12 +33,11 @@ body {
   border: black;
   border-style: solid;
   border-color: rgb(19, 155, 209);
-
+  margin-top: 2rem;
   border-radius: 50%;
 }
 
 header {
-  margin-bottom: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -44,14 +45,38 @@ header {
   color: black;
 }
 
+.section_cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.section_cont img {
+  object-fit: contain;
+  width: 11rem;
+  height: 11rem;
+}
 header h1 {
-  font-size: 1.5rem;
-  color: rgb(17, 72, 226);
-  font-weight: 700;
+  font-size: 2.4rem;
+  background: linear-gradient(45deg, #064faf, #08cddb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
   margin-top: 1rem;
+
+  line-height: 33px;
+}
+header h1 span {
+  font-size: 1.7rem;
+  color: rgb(23, 7, 116);
+  font-weight: bold;
 }
 header p {
-  font-weight: 600;
+  font-weight: 400;
+  font-size: 8.2px;
+  background: linear-gradient(45deg, #020a4b, #db089c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .intro {
@@ -69,24 +94,26 @@ header p {
   margin-top: 1rem;
 }
 .second h1 {
-  border: black 2px solid;
-  border-radius: 1rem;
   color: rgb(17, 72, 226);
   font-weight: 700;
   font-size: 1.4rem;
-  padding: 5px;
-  background-color: rgba(112, 107, 107, 0.411);
+  padding: 12px;
+  background: linear-gradient(45deg, #020a4b, #db089c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-radius: 15px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
 }
-
 
 .second p {
   margin: 1rem;
   font-weight: 600;
   font-size: 18px;
 }
-.second .message p{
-    font-size: 16px;
-    font-weight: 300;
+.second .message p {
+  font-size: 14px;
+  font-weight: 300;
 }
 .second .advert {
   display: flex;
@@ -95,22 +122,22 @@ header p {
   align-items: center;
 }
 
-.second .advert p{
-    font-size: 16px;
-    font-weight: 300;
+.second .advert p {
+  font-size: 16px;
+  font-weight: 300;
 }
 
-.advert .success{
-    color: green;
-    font-weight: 600;
+.advert .success {
+  color: green;
+  font-weight: 600;
 }
 .advert .fail {
-    color: red;
-    font-weight: 600;
+  color: red;
+  font-weight: 600;
 }
-.advert .neutral{
-    color:brown;
-    font-weight: 600;
+.advert .neutral {
+  color: brown;
+  font-weight: 600;
 }
 
 .cta-button {
@@ -149,8 +176,10 @@ header p {
 }
 
 .testimonials {
-  background: #f5f5f5;
-  padding: 40px 20px;
+  background: #f5f3f3;
+  padding: 20px 10px;
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .testimonial-slider {
@@ -158,19 +187,56 @@ header p {
   max-width: 600px;
   margin: auto;
   overflow: hidden;
+  background: linear-gradient(to right, #c20855, #6610f2);
 }
 
 .testimonial-container {
   display: flex;
   transition: transform 0.5s ease-in-out;
+  
 }
 
 .testimonial {
   min-width: 100%;
-  padding: 20px;
-  background: white;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+ 
+  
+}
+
+.testimonial a {
+  margin-top: 1rem;
+  border: black 2px solid;
+  padding: 0.5rem;
+  border-radius: 20px;
+  background-color: white;
+  
+  color: black;
+}
+.testimonial p{
+  font-size: 16px;
+ 
+}
+.testimonials h2{
+  text-transform: uppercase;
+  color: rgb(17, 72, 226);
+  font-weight: 700;
+  font-size: 1.4rem;
+  padding: 10px;
+  background: linear-gradient(45deg, #020a4b, #db089c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-radius: 15px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  margin-bottom: 1.5rem;
+  
+}
+.testimonial a:hover {
+  background: rgb(233, 229, 229);
 }
 
 button {
@@ -182,7 +248,8 @@ button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 2em;
+  font-size: 1rem;
+ 
 }
 
 .prev {
@@ -205,3 +272,75 @@ footer {
   padding: 20px;
   margin-top: 20px;
 }
+
+.containers {
+  max-width: 600px;
+
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  margin-bottom: 2rem;
+}
+
+/* Header */
+.containers h1 {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: linear-gradient(45deg, #541fce, #e93f10);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 15px;
+}
+
+.containers .picture img {
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+
+/* Paragraph */
+p {
+  font-size: 12px;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+/* Highlighted Text */
+span.highlight {
+  color: #190ae2;
+  font-weight: bold;
+  text-shadow: 0px 0px 10px rgba(128, 121, 27, 0.8);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+.testimonials .story h3 {
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: linear-gradient(45deg, #541fce, #e93f10);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 15px;
+}
+
+.testimonials .story p{
+  font-size: 15px;
+  line-height: 1.6;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
