@@ -42,7 +42,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: black;
+  
 }
 
 .section_cont {
@@ -455,7 +455,7 @@ span.highlight {
   
 }
 
-hr {
+.offer-container hr {
   border: none;
   border-top: 1px solid #444;
   margin: 2rem 0;
