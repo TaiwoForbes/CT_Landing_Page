@@ -176,6 +176,94 @@ header p {
 
 .testimonials {
   background: #f5f3f3;
+  padding: 20px 5px;
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.testimonial-slider {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+  background: linear-gradient(to right, #c20855, #6610f2);
+}
+
+.testimonial-container {
+  display: flex;
+  
+  transition: transform 0.5s ease-in-out;
+}
+
+.testimonial {
+  min-width: 110%;
+  
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.5rem;
+  
+ 
+}
+.testimonial img{
+  margin-right: 1rem;
+}
+
+.testimonial a {
+  margin-top: 1rem;
+  border: black 2px solid;
+  padding: 0.5rem;
+  border-radius: 20px;
+  background-color: white;
+
+  color: black;
+}
+.testimonial p {
+  font-size: 15px;
+  line-height: 16px;
+  margin-bottom:0.5rem ;
+}
+
+.testimonials h2 {
+  text-transform: uppercase;
+  color: rgb(17, 72, 226);
+  font-weight: 700;
+  font-size: 1.4rem;
+  padding: 10px;
+  background: linear-gradient(45deg, #020a4b, #db089c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-radius: 15px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  margin-bottom: 1.5rem;
+}
+.testimonial a:hover {
+  background: rgb(233, 229, 229);
+}
+
+button {
+  background: #ff6600;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1rem;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+/* .testimonials {
+  background: #f5f3f3;
   padding: 20px 10px;
   border-radius: 1rem;
   margin-bottom: 1.5rem;
@@ -251,7 +339,7 @@ button {
 
 .next {
   right: 0;
-}
+} */
 
 .cta {
   background: #ff6600;
